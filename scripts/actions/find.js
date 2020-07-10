@@ -7,15 +7,15 @@
  * @returns {boolean} does the value exist or not?
  */
 const isItThere = (arrOfStrings, toFind) => {
+  debugger;
   let exists = false;
-  for (let _ of _) {
-
+  for (let value of arrOfStrings) {
+    if (value === toFind) {
+      exists = true;
+    }
   }
   return exists;
 };
-
-
-
 
 // test the function (all the tests work!)
 const assert = chai.assert;
@@ -52,9 +52,6 @@ describe('isItThere checks if a certain string is in an array of strings', () =>
     assert.strictEqual(actual, expect);
   });
 });
-
-
-
 
 // allow users to interact with the function
 //  (this handler works!)

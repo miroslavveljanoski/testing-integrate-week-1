@@ -14,11 +14,9 @@ const pushToArrayHandler = () => {
   }
 
   // push the new value into the shared array
-  _.push(_);
-
+  inputsArray.push(newInput);
 
   console.log('inputsArray (after):', typeof inputsArray, '\n', inputsArray);
 
   alert(`your input has been saved`);
-
 };
